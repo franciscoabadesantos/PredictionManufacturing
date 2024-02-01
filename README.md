@@ -41,6 +41,9 @@ During the execution of each station, it is possible to collect the energy requi
 
 This data is stored in CSV format (Comma-separated values). So, in fact what we have is a file with the structure presented in Figure 3.
 
+![image](https://github.com/franciscoabadesantos/PredictionManufacturing/assets/65195331/67913da0-7eb2-42e5-a668-7ed981e2ad28)
+
+
 The idea of the project is to create an API capable of predicting the energy required to execute one skill in one specific station and use that data to optimize the system, consuming less energy to produce each product.
 
 In the initial stage, the focus will be on the implementation and training of the Regression Models, as well as on the server and respective service(s), which will host and provide the prediction functionality to the control system. Later, students should adapt the implementation of the control system to include the additional step of attempting to optimize energy consumption.
