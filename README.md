@@ -37,13 +37,11 @@ The goal of this assignment is to implement and integrate the PA, RA and TA requ
 
 This will encompass the development of a machine learning solution to automatically predict the energy consumption of executing a skill in a specific station. For example, what is the energy required to execute skill “Glue_Type_A” in the station “Glue_Station_1”? This system is depicted in Figure 1, following the same topology and execution logic already used in Lab 1
 
-During the execution of each station, it is possible to collect the energy required for each execution, storing the skill performed and the robot velocity during execution. We have a file with this info for each station, like the example in Figure 2.
-
-This data is stored in CSV format (Comma-separated values). So, in fact what we have is a file with the structure presented in Figure 3.
-
-![image](https://github.com/franciscoabadesantos/PredictionManufacturing/assets/65195331/67913da0-7eb2-42e5-a668-7ed981e2ad28)
-
+During the execution of each station, it is possible to collect the energy required for each execution, storing the skill performed and the robot velocity during execution. We have a file with this info for each station.
+This data is stored in CSV format (Comma-separated values). 
 
 The idea of the project is to create an API capable of predicting the energy required to execute one skill in one specific station and use that data to optimize the system, consuming less energy to produce each product.
+
+![image](https://github.com/franciscoabadesantos/PredictionManufacturing/assets/65195331/67913da0-7eb2-42e5-a668-7ed981e2ad28)
 
 In the initial stage, the focus will be on the implementation and training of the Regression Models, as well as on the server and respective service(s), which will host and provide the prediction functionality to the control system. Later, students should adapt the implementation of the control system to include the additional step of attempting to optimize energy consumption.
