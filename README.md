@@ -4,6 +4,7 @@
 The system is constituted by four stations, particularly glue application workstations that apply structural adhesive to a product part. Additionally, there’s one Autonomous Ground Vehicle (AGV) responsible for moving the product between stations. Each resource/station is capable of performing the following operations/skills:
 
 Table 1 - Skill distribution per Station
+
 Resource/Station Location ID Skill ID
 Glue Station #1 GlueStation1 Glue Type A, Glue Type B
 Glue Station #2 GlueStation2 Glue Type A, Glue Type C
