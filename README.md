@@ -3,24 +3,39 @@
 
 The system is constituted by four stations, particularly glue application workstations that apply structural adhesive to a product part. Additionally, there’s one Autonomous Ground Vehicle (AGV) responsible for moving the product between stations. Each resource/station is capable of performing the following operations/skills:
 
+
 Table 1 - Skill distribution per Station
 
 Resource/Station Location ID Skill ID
+
 Glue Station #1 GlueStation1 Glue Type A, Glue Type B
+
 Glue Station #2 GlueStation2 Glue Type A, Glue Type C
+
 Glue Station #3 GlueStation3 Glue Type B, Glue Type C
+
 Glue Station #4 GlueStation4 Glue Type A, Glue Type B, Glue Type C
+
 AGV - Move
+
 Operator Source Pick-up, Drop
+
 
 The entry (pick-up) and removal (drop) of the product is performed by an operator (which can be abstracted as a resource). In this system, let us assume products are introduced in a given entry point. The AGV must move to the entry point (source), pick-up the product from the operator, then move it to an appropriate glue station. The glue station must be chosen based on the product requirements (its production process / plan) and their availability. Then, depending on the plan, it either moves the product to the following station or to an exit point (sink), through which the product leaves the system once more with the aid of the operator.
 
+
 The product variants are described in Table 2:
+
 Table 2 - Description of the product variants
+
 Product Plan
+
 Product A Pick-up, Glue Type A, Glue Type B, Drop
+
 Product B Pick-up, Glue Type A, Glue Type C, Drop
+
 Product C Pick-up, Glue Type A, Glue Type B, Glue Type C, Drop
+
 
 In this assignment, students develop a multiagent system capable of controlling the production in a manner that is agile and flexible. In order to accomplish this, three generic agent types are proposed and described in Table 1. However, students are free to adapt this based on their modelling, as long as the overall functionality and characteristics of the system are ensured.
 
