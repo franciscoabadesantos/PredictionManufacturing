@@ -40,11 +40,15 @@ Product C Pick-up, Glue Type A, Glue Type B, Glue Type C, Drop
 In this assignment, students develop a multiagent system capable of controlling the production in a manner that is agile and flexible. In order to accomplish this, three generic agent types are proposed and described in Table 1. However, students are free to adapt this based on their modelling, as long as the overall functionality and characteristics of the system are ensured.
 
 Product Agent (PA) - This agent is the entity responsible for controlling the entire execution of the process for a specific product in the job shop. Each product is abstracted by an agent of this type in a one-to-one relationship. For this, the PA should:
+
 • Negotiate with the RAs which one should execute the next skill in the product’s execution list;
+
 • Send a request to the TA to ask for transportation from its current location to the location of the RA chosen in the previous step;
-• Send a request to the RA to 
-perform the execution of the correct skill.
+
+• Send a request to the RA to perform the execution of the correct skill.
+
 Resource Agent (RA) - This agent is responsible for abstracting a physical resource within the shopfloor, which depending on the level of granularity could be a robot, a gripper, or a station for example. Each resource is capable of executing a certain number of operations (represented in this assignment as skills), which can include for instance applying glue of a certain type, as required by the product’s execution list. Therefore, the RA should be capable of handling the product’s negotiation and request messages, as well as of performing the necessary skills using the appropriate library.
+
 Transport Agent (TA) - The TA is the agent responsible for abstracting the AGV or AGVs that transport the products from point A to point B. Thus, the TA should handle the requests from PAs that require transportation to the location of a certain resource within the job shop. 
 
 The goal of this assignment is to implement and integrate the PA, RA and TA required to control the job shop using the JADE framework.
