@@ -1,4 +1,4 @@
-# PredictionManufacturing
+# Prediction Manufacturing
  Machine Learning for Energy Consumption Prediction in a Manufacturing System
 
 The system is constituted by four stations, particularly glue application workstations that apply structural adhesive to a product part. Additionally, there’s one Autonomous Ground Vehicle (AGV) responsible for moving the product between stations. Each resource/station is capable of performing the following operations/skills:
